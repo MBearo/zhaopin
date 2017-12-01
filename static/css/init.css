@@ -1,0 +1,833 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+figcaption,
+figure,
+main {
+  display: block
+}
+
+figure {
+  margin: 1em 40px
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted
+}
+
+b,
+strong {
+  font-weight: inherit
+}
+
+b,
+strong {
+  font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+dfn {
+  font-style: italic
+}
+
+mark {
+  background-color: #ff0;
+  color: #000
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+audio,
+video {
+  display: inline-block
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+img {
+  border-style: none
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+  -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+fieldset {
+  padding: .35em .75em .625em
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+details,
+menu {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+canvas {
+  display: inline-block
+}
+
+template {
+  display: none
+}
+
+[hidden] {
+  display: none
+}
+
+
+/*# sourceMappingURL=normalize.min.css.map */
+
+html,
+body {
+  font: 9pt Arial, "微软雅黑";
+  font-family: HELVETICANEUELTPRO-THEX, Arial, "\5FAE\8F6F\96C5\9ED1";
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  color: #1f2f3d;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.color-primary {
+  color: #eb5648;
+}
+
+.bg-primary {
+  background-color: #eb5648;
+}
+
+.flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-0 {
+  -webkit-box-flex: 0 0 auto;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 0 0 auto;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 auto;
+  /* Chrome */
+  -ms-flex: 0 0 auto;
+  /* IE 10 */
+  flex: 0 0 auto;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-1 {
+  -webkit-box-flex: 1 1 auto;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1 1 auto;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 1 1 auto;
+  /* Chrome */
+  -ms-flex: 1 1 auto;
+  /* IE 10 */
+  flex: 1 1 auto;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  min-width: 0;
+}
+
+.align-items-center {
+  box-align: center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.justify-between {
+  -moz-box-pack: space-between;
+  -webkit--moz-box-pack: space-between;
+  box-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.justify-around {
+  -moz-box-pack: space-around;
+  -webkit--moz-box-pack: space-around;
+  box-pack: sspace-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+/* ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff776a;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e8e8e8;
+  
+} */
+
+
+/*工具*/
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-success {
+  background-color: #5cb85c;
+}
+
+.bg-info {
+  background-color: #5bc0de;
+}
+
+.bg-warning {
+  background-color: #f0ad4e;
+}
+
+.bg-danger {
+  background-color: #d9534f;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-success {
+  color: #5cb85c;
+}
+
+.color-info {
+  color: #5bc0de;
+}
+
+.color-warning {
+  color: #f0ad4e;
+}
+
+.color-danger {
+  color: #d9534f;
+}
+
+.bg-light {
+  background-color: #0f98f0;
+}
+
+.bg-primary {
+  background-color: #1F57AC;
+}
+
+.bg-dark {
+  background-color: #0a7cc5;
+}
+
+.color-light {
+  color: #0f98f0;
+}
+
+.color-primary {
+  color: #1F57AC;
+}
+
+.color-dark {
+  color: #0a7cc5;
+}
+
+.font-size12 {
+  font-size: 1.2rem;
+}
+
+.font-size14 {
+  font-size: 1.4rem;
+}
+
+.font-size16 {
+  font-size: 1.6rem;
+}
+
+
+/*重要*/
+
+
+/*用于重要及文字信息,内容标题信息:如tab名称,歌单名称,大板块标题,类目名称等*/
+
+.color-333 {
+  color: #333;
+}
+
+
+/*一般*/
+
+
+/*普通级段落信息,用户名,icon等*/
+
+.color-666 {
+  color: #666;
+}
+
+
+/*辅助,次要的文字信息*/
+
+.color-888 {
+  color: #888;
+}
+
+
+/*辅助,次要的文字信息,排序等*/
+
+.color-999 {
+  color: #999;
+}
+
+
+/*辅助,次要的文字信息,icon等*/
+
+.color-b2b2 {
+  color: #b2b2b2;
+}
+
+
+/*用于下载列表及失效列表的icon等*/
+
+.color-ccc {
+  color: #ccc;
+}
+
+
+/*较弱*/
+
+
+/*用于分割模块的标题栏底色,动态资源底色*/
+
+.bg-black5 {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+
+/*用于分割线*/
+
+.bg-black10 {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.pull-left,
+.left-float {
+  float: left;
+}
+
+.pull-right,
+.right-float {
+  float: right;
+}
+
+.clear-both:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.clearfix:before {
+  content: '';
+  display: table;
+}
+
+.hidden {
+  display: none;
+}
+
+.ib-vertical-align:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.inline-block {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-cover {
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: center no-repeat;
+  background-size: cover;
+}
+
+.bg-contain {
+  -ms-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background: center no-repeat;
+  background-size: contain;
+}
+
+
+/*flex在ie11及以上*/
+
+.flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-0 {
+  -webkit-box-flex: 0 0 auto;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 0 0 auto;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 auto;
+  /* Chrome */
+  -ms-flex: 0 0 auto;
+  /* IE 10 */
+  flex: 0 0 auto;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-1 {
+  -webkit-box-flex: 1 1 auto;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1 1 auto;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 1 1 auto;
+  /* Chrome */
+  -ms-flex: 1 1 auto;
+  /* IE 10 */
+  flex: 1 1 auto;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  min-width: 0;
+}
+
+.align-items-center {
+  box-align: center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.justify-between {
+  -moz-box-pack: space-between;
+  -webkit--moz-box-pack: space-between;
+  box-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.justify-around {
+  -moz-box-pack: space-around;
+  -webkit--moz-box-pack: space-around;
+  box-pack: sspace-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+}
+
+h2,
+.h2 {
+  font-size: 30px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+}
+
+h6,
+.h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.biaoti {
+  margin-bottom: 20px;
+}
+
+.biaoti>p {
+  color: #5e6d82;
+  font-weight: 300;
+}
+
+.biaoti>h3 {
+  font-weight: 300;
+}
+
+.biaodan {
+  background-color: white;
+  padding: 0px 20px 1px 20px;
+  margin-bottom: 10px
+}
+
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal-overlay {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ins {
+  visibility: visible;
+  opacity: 1;
+}

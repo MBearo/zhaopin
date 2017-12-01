@@ -1,0 +1,74 @@
+[v-cloak] {
+  display: none
+}
+body{
+  background-color: #f7f7f7;
+}
+.bar-body {
+  /* border-bottom: 1px solid #f3f3f3; */
+  height: 44px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #27b0ff;
+}
+
+.bar-icon {
+  width: 52px;
+  /* color: #fe7418; */
+  line-height: 45px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bar-content {
+  padding: 8px 10px;
+  position: relative;
+}
+
+.bar-footer {
+  height: 43px;
+  position: relative;
+}
+.search_icon{
+	position: absolute;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+    color: #969696;
+}
+.bar-body.back{
+  padding: 0;
+}
+.bar-content.back{
+	text-align: center;
+  font-size:17px;
+  padding: 0;
+  line-height: 45px;
+}
+.bar-icon.back{
+	width: 45px;
+  font-size: 24px;
+  border-radius: 100%;
+}
+.touch-light:active{
+  transition: all .15s;
+  background-color: rgba(255, 255, 255, .3);
+}
+.touch-dark:active{
+  transition: all .15s;
+  background-color: rgba(0, 0, 0, .3);
+}
+.bg-primary{
+  background-color: #27b0ff;
+}
+.color-primary{
+  color: #27b0ff
+}
